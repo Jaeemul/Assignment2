@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared style */
+.section-width{
+    max-width: 1250px;
+}
+
+.orange{
+    color: rgba(254, 163, 1, 1);
+}
+
+.skyblue{
+    color: rgba(1, 172, 253, 1);
+}
+
+.O5D4DF{
+    color: rgba(5, 212, 223, 1);
+}
+.purple{
+    color: rgba(93, 88, 239, 1);
+}
+
+/* header */
+.logo{
+    max-width: 200px;
+    max-height: 62px;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.logo h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.Home{
+    font-weight: 700;
+}
+
+nav button{
+    width: 197px;
+    height: 50px;
+    background: rgba(254, 163, 1, 1);
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+    nav ul, nav button{
+        display: none;
+    }
+    nav{
+        background-image: url("../assets/hamburger-menu-4.png");
+    }
+}
