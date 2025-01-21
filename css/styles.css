@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .quicksand-quicksand {
@@ -63,7 +64,9 @@
     font-size: 1.9rem;
 }
 
+
 nav{
+    
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -155,15 +158,21 @@ nav button{
 
 /* Curriculam Section */
 
+.container-curriculam{
+    min-width: 1440px;
+    background-image: url(../assets/bg.png);
+    background-position: left 1px bottom 110px;
+}
+
 .section-curriculam{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px auto;
+    margin-left: auto;
+    margin-right: auto;
     /* margin: 60px auto; */
     height: 879px;
-    background-image: url(../assets/bg.png);
-    background-position: right 1px bottom 110px;
+    
 }
 
 .section-curriculam h1{
@@ -171,11 +180,13 @@ nav button{
 }
 
 .cards-curriculam{
+    margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* flex-wrap: wrap; */
-    width: 1160px;
+    width: 1220px;
     height: 481px;
     gap: 28px;
 }
@@ -239,6 +250,11 @@ nav button{
     border: 1px solid rgba(242, 232, 255, 1);
 }
 
+.slider{
+    width: 130px;
+    height: 60px;
+}
+
 .slide-button {
     margin-top: 80px;
     font-size: 35px;
@@ -255,7 +271,104 @@ nav button{
     transform: scale(1.05);
 }
 
+/* Stories-Section starts here */
 
+/*
+    .container-curriculam{
+    min-width: 1440px;
+    background-image: url(../assets/bg.png);
+    background-position: left 1px bottom 110px;
+}
+
+    .section-curriculam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 879px;
+    background-image: url(../assets/bg.png);
+    background-position: right 1px bottom 110px;
+}
+ */
+
+.container-stories{
+    min-width: 1440px;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 10%, rgba(254, 163, 1, 0.3) 16%, white 74%);
+}
+
+.section-stories{
+    margin-top: 120px;
+    height: 1018px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-stories{
+    display: grid;
+    grid-template-columns: 1fr repeat(2,1fr);
+    gap: 19px;
+    justify-items: end;
+    align-items: start;
+}
+
+.card-story{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 301px;
+    /* border: 1px solid black; */
+    border-radius: 16px;
+    /* overflow: hidden; */
+    background: white;
+}
+
+.card-story img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card1{
+    grid-row: span 3;
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.story-info{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card1 h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 47px;
+}
+
+
+
+.card1 img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
 /* .slide-button:hover .button-icon {
     transform: translateX(5px);
 } */
@@ -271,7 +384,7 @@ nav button{
     } */
     
     .width-mobile{
-        max-width: 357px;
+        min-width: 390px;
     }
     /* mobile design */
     body{
@@ -281,8 +394,9 @@ nav button{
     nav ul, nav button, .logo h1, .slider{
         display: none;
     }
-    
-    header{
+
+    nav{
+        padding-bottom: 10px;
         border-bottom: 1px solid rgba(254, 163, 1, 1);
     }
 
@@ -334,37 +448,20 @@ nav button{
     }
     /* section-curriculam */
 
-    /* .section-curriculam{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 60px auto;
-        height: 879px;
-        background-image: url(../assets/bg.png);
-        background-position: right 1px bottom 110px;
-    } */
-
-    
+    .container-curriculam{
+        min-width: 390px;
+    }
 
     .cards-curriculam{
         margin-top: 100px;
         flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
         gap: 12px;
         width: 357px;
         height: 3000px;
     }
-    /* .card-curric{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 367px;
-        height: 476px;
-        gap: 4px;
-        border-radius: 18px;
-    } */
-
+    
     .card-curric{
         width: 347px;
         height: 400px;
