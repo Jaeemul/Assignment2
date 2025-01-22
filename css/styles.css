@@ -41,6 +41,16 @@
     color: rgba(93, 88, 239, 1);
 }
 
+.green-btn{
+    background: rgba(149, 178, 38, 1);
+    color: #FFFFFF;
+}
+
+.vi-btn{
+    background: rgba(93, 88, 240, 1);
+    color: #FFFFFF;
+}
+
 .title-section{
     font-size: 2.8rem;
     font-weight: 700;
@@ -66,7 +76,6 @@
 
 
 nav{
-    
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -160,8 +169,9 @@ nav button{
 
 .container-curriculam{
     min-width: 1440px;
+    height: 1010px;
     background-image: url(../assets/bg.png);
-    background-position: left 1px bottom 110px;
+    background-position: top 4px bottom 110px;
 }
 
 .section-curriculam{
@@ -250,13 +260,14 @@ nav button{
     border: 1px solid rgba(242, 232, 255, 1);
 }
 
-.slider{
+/* .slider{
     width: 130px;
     height: 60px;
-}
+} */
 
 .slide-button {
     margin-top: 80px;
+    margin-bottom: 120px;
     font-size: 35px;
     width: 60px;
     height: 60px;
@@ -298,7 +309,7 @@ nav button{
 }
 
 .section-stories{
-    margin-top: 120px;
+    
     height: 1018px;
     display: flex;
     flex-direction: column;
@@ -311,10 +322,10 @@ nav button{
 
 .cards-stories{
     display: grid;
-    grid-template-columns: 1fr repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 19px;
-    justify-items: end;
-    align-items: start;
+    /* justify-items: end;
+    align-items: start; */
 }
 
 .card-story{
@@ -323,8 +334,7 @@ nav button{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 290px;
-    height: 301px;
+    gap: 19px;
     /* border: 1px solid black; */
     border-radius: 16px;
     /* overflow: hidden; */
@@ -332,12 +342,32 @@ nav button{
 }
 
 .card-story img{
+    width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
+.card-story h4{
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.card-story button{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 28px;
+    width: 174px;
+    height: 38px;
+    border-radius: 47px;
+    border: none;
+    position: absolute;
+    bottom: 70px;
+}
+
 .card1{
-    grid-row: span 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
     width: 540px;
     height: 630px;
     border-radius: 16px;
@@ -349,8 +379,10 @@ nav button{
 }
 
 .story-info{
+    position: relative;
     width: 80%;
-    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,14 +392,47 @@ nav button{
 .card1 h4{
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 38px;
     margin-bottom: 47px;
 }
 
-
+.card1 p{
+    color: rgba(102, 102, 102, 1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 34px;
+}
 
 .card1 img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+
+.card1 button{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: rgba(60, 216, 232, 1);
+    width: 174px;
+    height: 47px;
+    border-radius: 47px;
+    border: none;
+    position: relative;
+    bottom: 25px;
+}
+
+.section-stories > button{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 30px;
+    width: 197px;
+    height: 50px;
+    border: 0;
+    border-radius: 12px;
+    background: black;
+    color: #FFFFFF;
 }
 /* .slide-button:hover .button-icon {
     transform: translateX(5px);
