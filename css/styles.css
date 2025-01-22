@@ -46,9 +46,19 @@
     color: #FFFFFF;
 }
 
+.green-btn:hover{
+    background: rgb(193, 214, 107);
+    cursor: pointer;
+}
+
 .vi-btn{
     background: rgba(93, 88, 240, 1);
     color: #FFFFFF;
+}
+
+.vi-btn:hover{
+    background: rgb(107, 104, 198);
+    cursor: pointer;
 }
 
 .title-section{
@@ -69,11 +79,18 @@
     align-items: center;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 .logo h1{
     font-weight: 600;
     font-size: 1.9rem;
 }
 
+.container-header{
+    min-width: 1440px;
+}
 
 nav{
     margin: 20px auto;
@@ -112,7 +129,16 @@ nav button{
     color: #FFFFFF;
 }
 
+nav button:hover{
+    background: rgb(213, 158, 61);
+    cursor: pointer;
+}
 /* Section starts here */
+
+
+.container-hero{
+    min-width: 1440px;
+}
 
 .section-hero{
     max-height: 575px;
@@ -154,6 +180,11 @@ nav button{
     height: 50px;
 }
 
+.hero-info button:hover{
+    background: rgb(227, 109, 109);
+    cursor: pointer;
+}
+
 .hero-img-container{
     width: 468px;
     height: 575px;
@@ -180,7 +211,6 @@ nav button{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    /* margin: 60px auto; */
     height: 879px;
     
 }
@@ -249,6 +279,10 @@ nav button{
     font-size: 0.9rem;
 }
 
+.card-curric a:hover{
+    color: rgb(89, 220, 18);
+}
+
 .card-orange-grad{
     background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 10%, rgba(255, 250, 240, 1) 16%, white 74%);
     box-shadow: 0 0 1px 0 rgba(255, 244, 220, 1), 0 6px 6px 0 rgba(255, 250, 240, 1);
@@ -260,11 +294,6 @@ nav button{
     box-shadow: 0 0 1px 0 rgba(242, 232, 255, 1), 0 6px 6px 0 0 rgba(248, 242, 255, 1);
     border: 1px solid rgba(242, 232, 255, 1);
 }
-
-/* .slider{
-    width: 130px;
-    height: 60px;
-} */
 
 .slide-button {
     margin-top: 80px;
@@ -287,9 +316,8 @@ nav button{
 
 .container-stories{
     min-width: 1440px;
-    /* background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 10%, rgba(254, 163, 1, 0.3) 16%, white 74%), url(../assets/bg.png); */
     background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 10%, rgba(254, 163, 1, 0.3) 16%, white 74%), url(../assets/bg.png) center/cover no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -321,9 +349,7 @@ nav button{
     justify-content: space-between;
     align-items: center;
     gap: 19px;
-    /* border: 1px solid black; */
     border-radius: 16px;
-    /* overflow: hidden; */
     background: white;
 }
 
@@ -409,6 +435,11 @@ nav button{
     bottom: 25px;
 }
 
+.card1 button:hover{
+    background: rgb(44, 170, 184);
+    cursor: pointer;
+}
+
 .section-stories > button{
     font-size: 1.25rem;
     font-weight: 500;
@@ -419,6 +450,11 @@ nav button{
     border-radius: 12px;
     background: black;
     color: #FFFFFF;
+}
+
+.section-stories > button:hover{
+    background: rgb(192, 76, 76);
+    cursor: pointer;
 }
 
 /* Footer Section Starts */
@@ -511,19 +547,18 @@ nav button{
     gap: 32px;
 }
 
+.logos-social img:hover{
+    cursor: pointer;
+}
+
 marquee{
     color: rgb(230, 117, 31);
     font-weight: 700;
     font-size: 2rem;
     background: rgba(205, 174, 207, 0.915);
     padding: 2px;
-    /* border: 1px solid rgb(206, 235, 131); */
     box-shadow: 5px -12px 20px 5px rgb(219, 74, 221), -4px 1px 20px 7px rgba(255, 250, 240, 1);
 }
-
-/* .slide-button:hover .button-icon {
-    transform: translateX(5px);
-} */
 
 /* Responsive */
 
@@ -543,6 +578,10 @@ marquee{
         display: none;
     }
 
+    .container-header{
+        min-width: 390px;
+    }
+
     nav{
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(254, 163, 1, 1);
@@ -555,6 +594,10 @@ marquee{
     }
 
     /* Section hero mobile */
+
+    .container-hero{
+        min-width: 390px;
+    }
 
     .section-hero{
         flex-direction: column-reverse;
@@ -591,7 +634,7 @@ marquee{
     .hero-info button{
         width: 160px;
         height: 150px;
-        padding: 9px 24px;
+        padding: 16px 24px;
         
     }
     /* section-curriculam-mobile */
@@ -661,21 +704,6 @@ marquee{
 
     /* footer-mobile-design */
 
-    /* .container-footer{
-        min-width: 1440px;
-        background: rgba(1, 172, 253, 1);
-    }
-    
-    .section-footer{
-        height: 519px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
     .container-footer{
         min-width: 390px;
 
@@ -691,9 +719,7 @@ marquee{
         flex-wrap: wrap;
         row-gap: 0px;
     }
-    .footer-logo{
-        
-    }
+    
     .footer-logo p{
         max-width: 320px;
     }
