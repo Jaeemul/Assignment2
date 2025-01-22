@@ -171,7 +171,7 @@ nav button{
     min-width: 1440px;
     height: 1010px;
     background-image: url(../assets/bg.png);
-    background-position: top 4px bottom 110px;
+    background-position: left 10px bottom 240px;
 }
 
 .section-curriculam{
@@ -186,6 +186,7 @@ nav button{
 }
 
 .section-curriculam h1{
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -284,32 +285,17 @@ nav button{
 
 /* Stories-Section starts here */
 
-/*
-    .container-curriculam{
-    min-width: 1440px;
-    background-image: url(../assets/bg.png);
-    background-position: left 1px bottom 110px;
-}
-
-    .section-curriculam{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 879px;
-    background-image: url(../assets/bg.png);
-    background-position: right 1px bottom 110px;
-}
- */
-
 .container-stories{
     min-width: 1440px;
-    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 10%, rgba(254, 163, 1, 0.3) 16%, white 74%);
+    /* background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 10%, rgba(254, 163, 1, 0.3) 16%, white 74%), url(../assets/bg.png); */
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 10%, rgba(254, 163, 1, 0.3) 16%, white 74%), url(../assets/bg.png) center/cover no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
 }
 
 .section-stories{
-    
     height: 1018px;
     display: flex;
     flex-direction: column;
@@ -434,6 +420,10 @@ nav button{
     background: black;
     color: #FFFFFF;
 }
+
+/* Footer Section Starts */
+
+
 /* .slide-button:hover .button-icon {
     transform: translateX(5px);
 } */
@@ -443,6 +433,7 @@ nav button{
 @media screen and (max-width: 576px) {
 
     /* Shared width for mobile */
+
     /* .mobile-width{
         margin-left: 16px;
         margin-right: 16px;
@@ -451,12 +442,12 @@ nav button{
     .width-mobile{
         min-width: 390px;
     }
-    /* mobile design */
+    /* nav mobile design */
     body{
         margin: 0;
     }
 
-    nav ul, nav button, .logo h1, .slider{
+    nav ul, nav button, .logo h1, .slider, .card1{
         display: none;
     }
 
@@ -471,7 +462,7 @@ nav button{
         height: 40px;
     }
 
-    /* Section hero */
+    /* Section hero mobile */
 
     .section-hero{
         flex-direction: column-reverse;
@@ -511,7 +502,7 @@ nav button{
         padding: 9px 24px;
         
     }
-    /* section-curriculam */
+    /* section-curriculam-mobile */
 
     .container-curriculam{
         min-width: 390px;
@@ -537,4 +528,42 @@ nav button{
         width: 92px;
         height: 92px;
     }
+
+    /* Section-stories-mobile */
+    .container-stories{
+        min-width: 390px;
+    }
+
+    .section-stories{
+        width: 80%;
+        height: 1768px;
+    }
+
+    .cards-stories{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .story-info button{
+        width: 103px;
+        height: 22px;
+        font-size: 50%;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 30px ;
+    }
+
+    .story-info{
+        width: 100%;
+        position: relative;
+    }
+
+    .story-info h4{
+        position: relative;
+        bottom: 23px;
+    }
+
 }
